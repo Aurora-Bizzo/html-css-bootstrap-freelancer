@@ -6,6 +6,8 @@
 
 body {
     font-family: 'Source Sans Pro', sans-serif;
+    font-size: 19px;
+    font-weight: bold;
 }
 
 /*utilities*/
@@ -14,26 +16,41 @@ body {
         display: inline-block;
     }
 
-    .font-size-30 {
-        font-size: 30px;
-    }
+    /*fonts*/
 
-    .font-size-40 {
-        font-size: 40px;
-    }
-
-    /*colors*/
-
-        .color-white {
-            color: white;
+        .font-size-13 {
+            font-size: 13px;
         }
 
-        .background-white {
-            background-color: white;
+        .font-size-16 {
+            font-size: 16px;
+        }
+
+        .font-size-22 {
+            font-size: 22px;
+        }
+
+        .font-size-30 {
+            font-size: 30px;
+        }
+
+        .font-size-40 {
+            font-size: 40px;
+        }
+
+    /*fonts-end*/
+    /*colors*/
+
+        #color-green {
+            color: rgb(26, 188, 156);
         }
 
         .background-blue {
             background-color: rgb(44, 62, 80);
+        }
+
+        .background-green {
+            background-color: rgb(26, 188, 156);
         }
 
     /*colors-end*/
@@ -54,10 +71,6 @@ body {
 
 /*jumbotron*/
 
-    #jumbotron {
-        background-color: rgb(26, 188, 156);
-    }
-
     #jumbo-img {
         width: 250px;
     }
@@ -73,35 +86,30 @@ body {
 
 /*jumbotron-end*/
 
+input {
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 1px solid black;
+    width: 100%;
+}
+
 .content, .content-title {
-    background-color: aqua;
     width: 100%
 }
 
-#about {
-    padding: 20px 0;
-    background-color: green;
-}
-
 footer {
-    background-color: orange;
-    padding: 30px 0 0 0;
+    background-color: rgb(58, 84, 109);
 }
 
-footer .content {
-    height: 200px;
-}
-
-.bottom-bar {
-    background-color: green;
-    padding: 20px 0;
-}
-
-.bottom-bar .content {
-    height: 100px;
-}
 
 /*media*/
+
+@media screen and (max-width: 768px) {
+    .container-small {
+        width: 55%;
+    }
+}
 
 @media screen and (min-width: 768px) {
 
@@ -124,4 +132,16 @@ footer .content {
     .font-size-28 {
         font-size: 28px;
     }
+
+    .container-small {
+        width: 75%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+
+    .container-small {
+        width: 85%;
+    }
+
 }

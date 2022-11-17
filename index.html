@@ -22,7 +22,7 @@
         </button>
         <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
             <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><strong>MENU</strong></h5>
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
@@ -45,21 +45,21 @@
     <!--main-->
         <main>
             <!--section-1-->
-                <section id="jumbotron">
+                <section class="background-green" id="jumbotron">
                     <div class="container">
                         <div class="row">
                             <div class="col-12">
                                 <div class="content margin-top-88 p-4">
                                     <div class="text-center">
                                         <img id="jumbo-img" src="./img/avatar.svg" alt="">
-                                        <h1 class="color-white font-size-40 font-size-65 my-2"><strong>START BOOTSTRAP</strong></h1>
+                                        <h1 class="text-white font-size-40 font-size-65 my-2"><strong>START BOOTSTRAP</strong></h1>
                                     </div>
                                     <div class="text-center">
-                                        <div class="star-bar background-white inline-block margin-10-5 margin-10-15 width-145"></div>
-                                        <div class="inline-block font-size-30 color-white"><i class="fa-solid fa-star"></i></div>
-                                        <div class="star-bar background-white inline-block margin-10-5 margin-10-15 width-145"></div>
+                                        <div class="star-bar bg-white inline-block margin-10-5 margin-10-15 width-145"></div>
+                                        <div class="inline-block font-size-30 text-white"><i class="fa-solid fa-star"></i></div>
+                                        <div class="star-bar bg-white inline-block margin-10-5 margin-10-15 width-145"></div>
                                     </div>
-                                    <div class="text-center color-white my-2">
+                                    <div class="text-center text-white my-2">
                                         <h4 class="font-size-28">GRAPHIC ARTIST - WEB DESIGNER - ILLUSTRATOR</h4>
                                     </div>
                                 </div>
@@ -123,31 +123,38 @@
                 </section>
             <!--section-2-end-->
             <!--section-3-->
-                <section id="about">
-                    <div class="container">
+                <section class="background-green py-3" id="about">
+                    <div class="container container-small">
                         <div class="row my-2">
                             <div class="col-12">
                                 <div class="content-title">
                                     <div class="text-center">
-                                        <h2 class="font-size-55 my-2"><strong>ABOUT</strong></h2>
+                                        <h2 class="font-size-55 my-2 text-white"><strong>ABOUT</strong></h2>
                                     </div>
                                     <div class="text-center">
-                                        <div class="star-bar bg-dark inline-block margin-10-5 margin-10-15 width-145"></div>
-                                        <div class="inline-block font-size-30"><i class="fa-solid fa-star"></i></div>
-                                        <div class="star-bar bg-dark inline-block margin-10-5 margin-10-15 width-145"></div>
+                                        <div class="star-bar bg-white inline-block margin-10-5 margin-10-15 width-145"></div>
+                                        <div class="inline-block font-size-30 text-white"><i class="fa-solid fa-star"></i></div>
+                                        <div class="star-bar bg-white inline-block margin-10-5 margin-10-15 width-145"></div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="row my-2">
                             <div class="col-12 col-md-6">
-                                <div class="content">
-
+                                <div class="content my-2 text-white">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde nobis iure fuga eos in! Tempora incidunt consequuntur sed aspernatur labore! Reprehenderit nesciunt perferendis voluptas amet quos? Natus nam molestiae iusto.
                                 </div>
                             </div>
                             <div class="col-12 col-md-6">
-                                <div class="content">
-
+                                <div class="content my-2 text-white">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam aliquid aut officiis, consequatur animi officia nulla corrupti explicabo! Mollitia dolores assumenda distinctio ex accusantium, in temporibus nisi natus consectetur aut!
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row my-2">
+                            <div class="col-12">
+                                <div class="content d-flex justify-content-center">
+                                    <button type="button" class="btn btn-outline-light btn-lg"><i class="fa-solid fa-download"></i> Download</button>
                                 </div>
                             </div>
                         </div>
@@ -155,8 +162,8 @@
                 </section>
             <!--section-3-end-->
             <!--section-4-->
-                <section id="contact-us">
-                    <div class="container">
+                <section class="my-4" id="contact-us">
+                    <div class="container container-small">
                         <div class="row gy-2">
                             <div class="col-12">
                                 <div class="content-title">
@@ -172,7 +179,19 @@
                             </div>
                             <div class="col-12">
                                 <div class="content">
-
+                                    <div class="pt-3">Name</div>
+                                    <input type="text" id="name" name="name">
+                                    <div class="pt-3">Email Address</div>
+                                    <input type="email" id="email" pattern=".+@globex\.com" size="30" required>
+                                    <div class="pt-3">Phone Number</div>
+                                    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                                    <div class="pt-3">Message</div>
+                                    <div class="form-floating">
+                                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 145px"></textarea>
+                                    </div>
+                                    <div>
+                                        <button type="submit" class="btn btn-lg text-white background-green mt-3">Send</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -182,37 +201,59 @@
         </main>
     <!--main-end-->
     <!--footer-->
-        <footer>
-            <div class="container">
+        <footer class="text-center">
+            <div class="container text-white font-size-22 py-4">
                 <div class="row g-2">
-                    <div class="col-12 col-md-4">
+                    <div class="col-12 col-md-4 my-3">
                         <div class="content">
-
+                            <div class="font-size-28">LOCATION</div>
+                            <div>2215 John Daniel Drive Clark, MO 54243</div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-4">
+                    <div class="col-12 col-md-4 my-3">
                         <div class="content">
-
+                            <div class="font-size-28">AROUND THE WEB</div>
+                            <div class="font-size-13">
+                                <span class="fa-stack fa-2x">
+                                    <i class="fa-regular fa-circle fa-stack-2x"></i>
+                                    <i class="fa-brands fa-facebook-f fa-stack-1x"></i>
+                                </span>
+                                <span class="fa-stack fa-2x">
+                                    <i class="fa-regular fa-circle fa-stack-2x"></i>
+                                    <i class="fa-brands fa-google-plus-g fa-stack-1x"></i>
+                                </span>
+                                <span class="fa-stack fa-2x">
+                                    <i class="fa-regular fa-circle fa-stack-2x"></i>
+                                    <i class="fa-brands fa-twitter fa-stack-1x"></i>
+                                </span>
+                                <span class="fa-stack fa-2x">
+                                    <i class="fa-regular fa-circle fa-stack-2x"></i>
+                                    <i class="fa-brands fa-linkedin-in fa-stack-1x"></i>
+                                </span>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-4">
+                    <div class="col-12 col-md-4 my-3">
                         <div class="content">
-
+                            <div class="font-size-28">ABOUT FREELANCER</div>
+                            <div>Freelance is a free to use, open source Bootstrap theme created by <span id="color-green">Start Bootstrap</span></div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="bottom-bar">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="content">
-        
+            <!--bottom-bar-->
+                <div class="bottom-bar background-blue">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="content text-white py-5 font-size-16">
+                                    <div>Copyright <i class="fa-regular fa-copyright"></i> Your website 2019</div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            <!--bottom-bar-end-->
         </footer>
     <!--footer-end-->
     <!-- JavaScript Bundle with Popper -->
