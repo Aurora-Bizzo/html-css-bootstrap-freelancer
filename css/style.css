@@ -1,0 +1,56 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+.content, .content-title {
+    background-color: aqua;
+    width: 100%
+}
+
+.content-title {
+    height: 150px;
+}
+
+
+#jumbotron {
+    background-color: blueviolet;
+}
+
+#jumbotron .content {
+    height: 350px;
+}
+
+#columns .content {
+    height: 250;
+}
+
+#columns .content, #about .content, #contact-us .content {
+    height: 250px;
+}
+
+#about {
+    padding: 20px 0;
+    background-color: green;
+}
+
+footer {
+    background-color: orange;
+    padding: 30px 0 0 0;
+}
+
+footer .content {
+    height: 200px;
+}
+
+.bottom-bar {
+    background-color: green;
+    padding: 20px 0;
+}
+
+.bottom-bar .content {
+    height: 100px;
+}
